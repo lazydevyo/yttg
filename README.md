@@ -1,4 +1,4 @@
-# yytg
+# yttg
 Youtube thumbnail grabber
 
 This is a simple javascript code that grabs a thumbnail from any youtube video link
