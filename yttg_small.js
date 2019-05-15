@@ -1,8 +1,8 @@
-      var urlonly = "";
-      var urlf = "";
-      var typeShuffleId = 0;
-      var ThumbnailName = "maxresdefault";
-	    var QualityNameLabel = ""; 
+var urlonly = "";
+var urlf = "";
+var typeShuffleId = 0;
+var ThumbnailName = "maxresdefault";
+var QualityNameLabel = ""; 
    
    
    function loadimage(){
@@ -18,7 +18,7 @@
 
          }else{
     	 var video_id = urlf.split('v=')[1];
-		 var ampersandPosition = video_id.indexOf('&');
+	 var ampersandPosition = video_id.indexOf('&');
  
           if(ampersandPosition != -1) {
             video_id = video_id.substring(0, ampersandPosition);
@@ -60,20 +60,19 @@
           typeShuffleId=0;
         }
         if(typeShuffleId==0){
-          ThumbnailName="maxresdefault";
-		QualityNameLabel="Max";
-
+        ThumbnailName="maxresdefault";
+	QualityNameLabel="Max";
         }else if(typeShuffleId==1){
-          ThumbnailName="hqdefault";
+        ThumbnailName="hqdefault";
 	QualityNameLabel="HQ";
         }else if(typeShuffleId==2){
-          ThumbnailName="mqdefault";
+        ThumbnailName="mqdefault";
 	QualityNameLabel="Medium";
         }else if(typeShuffleId==3){
-          ThumbnailName="sddefault";
+        ThumbnailName="sddefault";
 	QualityNameLabel="Standard";
         }else if(typeShuffleId==4){
-          ThumbnailName="default";
+        ThumbnailName="default";
 	QualityNameLabel="Default";
         }
         loadimage();
